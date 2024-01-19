@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "Cafe24Supermagic-Bold-v1.0";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/Cafe24Supermagic-Bold-v1.0.woff2")
+      format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    font-family: "Cafe24Supermagic-Bold-v1.0";
+}
+
+
+.title-name{
+    color: #333;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 80px */
+    letter-spacing: -1.28px;
+}
+
+.projectContainer{
+    padding: 100px 20px;
+    width: auto;
+    height: auto;
+    gap: 50px;
+}
+
+.list {
+    display: grid;
+    margin : 30px 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 30px;
+}
+
+.list li{
+    max-width: 960px;
+    margin: 0 auto;
+}

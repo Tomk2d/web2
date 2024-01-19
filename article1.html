@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <!-- Google tag (gtag.js) 구글 애널리틱스 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HRJBBSWP94"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-HRJBBSWP94');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web2</title>
+    <link rel='stylesheet' href='./reset.css'> <!-- 브라우저에서 기본적으로 맞춰둔 값 리셋 -->
+    <link rel='stylesheet' href='./article1.css'>  <!-- 이후에 나의 css 적용 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-tag-cloud.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdn.rawgit.com/jasondavies/d3-cloud/v1.2.0/build/d3.layout.cloud.js"></script>
+</head>
+
+<body>
+    <section>
+        <div class="article-container">
+            <div class="article-box">
+                <h1 class="article-title">이차전지 10년 투자로 7200% 벌었다…신한證, 빅데이터 공개</h1>
+                <p class="article-content">지난해 국내 투자자들이 가장 많이 매매한 종목은 삼성전자(74,100원 ▲ 2,400 3.35%)였다.<br><br>
+
+                17일 신한투자증권 빅데이터센터에 따르면 삼성전자는 고객 24만명이 매매했다. 삼성전자에 이어 시큐센, 미래반도체가 가장 많이 매매한 종목에 올랐다.<br><br>
+
+                2023년 최고 실현수익률은 10년 이상 이차전지주를 장기보유했던 고객으로 7203%다.<br><br>
+
+                지난 한 해 동안 오로지 한 종목만 매매한 순정파 고객은 4만7000명이었다. 이 중 최대 거래 종목과 그 횟수는 상신전자로 6787회다. 연초 대비 연말 주가가 가장 많이 상승한 종목은 포스코DX(1087%)였다.<br><br>
+
+                2023년 한 해 동안 거래한 종목 수가 가장 많은 고객의 거래 종목 수는 전체 종목 2656개 중 2428개 종목을 매매한 고객이었다. 또한 가장 많은 상품 종류를 거래한 고객의 거래 상품 숫자는 국내주식, 해외주식, 국내채권, 해외채권, 펀드, 주가연계증권(ELS), 파생결합증권(DLS) 등 10개 상품군이었다.<br><br>
+
+                신한투자증권은 “향후에도 데이터를 기반으로 고객의 거래 여정을 꾸준히 분석해 고객이 자산을 편리하게 관리하고 증식하는 데 기여하겠다”고 밝혔다.
+                </p>
+            </div>
+        </div>
+        
+        <form action="./article1.html" method="post" class="comment-box">
+            <div class="input-group mb-3">                    
+                <input type="text" class="form-control" name="id" placeholder="id" aria-label="id">
+                <span class="input-group-text"></span>
+                <input type="text" class="form-control" name="password" placeholder="Password" aria-label="Server">
+            </div>
+            <div class="input-group">
+                <span class="input-group-text">comment</span>
+                <textarea class="form-control" aria-label="With textarea"></textarea>
+            </div>
+            <button type="submit" class="btn btn-outline-secondary">입력완료</button>
+        </form>
+
+        <form action="" method="get" class="comments">
+            <div class="commentss">
+                <p>111</p>
+            </div>
+        </form>
+        <div class="chart-area">
+            <div id="container" style="width:100%; height:100%;"></div>
+            <div>
+                <script>
+                    // 여기에 워드 클라우드를 만들 텍스트를 입력합니다.
+                    var text = "이차전지 10년 투자로 7200% 벌었다... 신한證, 빅데이터 공개... 지난해 국내 투자자들이 가장 많이 매매한 종목은 삼성전자(73,900원 ▲ 2,200 3.07%)였다. 17일 신한투자증권 빅데이터센터에 따르면 삼성전자는 고객 24만명이 매매했다. 삼성전자에 이어 시큐센, 미래반도체가 가장 많이 매매한 종목에 올랐다. 2023년 최고 실현수익률은 10년 이상 이차전지주를 장기보유했던 고객으로 7203%다. 지난 한 해 동안 오로지 한 종목만 매매한 순정파 고객은 4만7000명이었다. 이 중 최대 거래 종목과 그 횟수는 상신전자로 6787회다. 연초 대비 연말 주가가 가장 많이 상승한 종목은 포스코DX(1087%)였다. 2023년 한 해 동안 거래한 종목 수가 가장 많은 고객의 거래 종목 수는 전체 종목 2656개 중 2428개 종목을 매매한 고객이었다. 또한 가장 많은 상품 종류를 거래한 고객의 거래 상품 숫자는 국내주식, 해외주식, 국내채권, 해외채권, 펀드, 주가연계증권(ELS), 파생결합증권(DLS) 등 10개 상품군이었다. 신한투자증권은 “향후에도 데이터를 기반으로 고객의 거래 여정을 꾸준히 분석해 고객이 자산을 편리하게 관리하고 증식하는 데 기여하겠다”고 밝혔다.";
+            
+                    var wordsArray = text.split(/\s+/);
+                    var wordCounts = {};
+                    for (var i = 0; i < wordsArray.length; i++) {
+                        var word = wordsArray[i].toLowerCase();
+                        if (word.length > 1) {
+                            wordCounts[word] = (wordCounts[word] || 0) + 1;
+                        }
+                    }
+
+                    // 단어 빈도수에 따라 정렬하고 상위 5개를 선택합니다.
+                    var sortedWords = Object.keys(wordCounts).sort(function(a, b) {
+                        return wordCounts[b] - wordCounts[a];
+                    }).slice(0, 5);
+
+                    // 상위 5개 단어에 대한 색상을 지정합니다.
+                    var colors = ["#e74c3c", "#3498db", "#2ecc71", "#f1c40f", "#9b59b6"];
+
+                    var wordCloudData = Object.keys(wordCounts).map(function(key) {
+                        return {
+                            text: key,
+                            size: wordCounts[key] * 10,
+                            color: sortedWords.includes(key) ? colors[sortedWords.indexOf(key)] : "#000000"
+                        };
+                    });
+
+                    var layout = d3.layout.cloud()
+                        .size([800, 400])
+                        .words(wordCloudData)
+                        .padding(5)
+                        .rotate(function() { return ~~(Math.random() * 2) * 90; })
+                        .font("Impact")
+                        .fontSize(function(d) { return d.size; })
+                        .on("end", draw);
+
+                    layout.start();
+
+                    function draw(words) {
+                        d3.select("body").append("svg")
+                            .attr("width", layout.size()[0])
+                            .attr("height", layout.size()[1])
+                            .append("g")
+                            .attr("transform", "translate(" + layout.size()[0] / 2 + "," + layout.size()[1] / 2 + ")")
+                            .selectAll("text")
+                            .data(words)
+                            .enter().append("text")
+                            .style("font-size", function(d) { return d.size + "px"; })
+                            .style("font-family", "Impact")
+                            .style("fill", function(d) { return d.color; })
+                            .attr("text-anchor", "middle")
+                            .attr("transform", function(d) {
+                                return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+                            })
+                            .text(function(d) { return d.text; });
+                    }
+                </script>
+            </div>    
+            </div>
+    </section>
+</body>

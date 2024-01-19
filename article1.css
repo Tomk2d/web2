@@ -1,0 +1,39 @@
+
+.article-container{
+    padding: 50px 70px;
+}
+
+.article-box{
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+}
+
+.article-title{
+    color: #000;
+    text-align: center;
+    font-size: 40px;
+}
+
+.article-content{ 
+    /**/
+}
+
+.comment-box{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.comment-box button{
+    margin-top: 10px;
+}
+
+.comments{
+    margin-top: 10px;
+    padding: 20px 30px;
+}
+
+.chart-area{
+    padding: 0px 50px;
+}
